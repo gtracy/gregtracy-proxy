@@ -4,3 +4,4 @@ This project is a redirect service for my personal blog. I've been blogging on P
 
 This simple service redirects requests for www.gregtracy.com to blog.gregtracy.com mapping to the Blogger format for date and slug name.
 
+This app is built to run on Google App Engine

@@ -32,9 +32,9 @@ class MainHandler(webapp.RequestHandler):
             new_slug = blog_slugs.slugs[slug]['new_slug']
             post_date = blog_slugs.slugs[slug]['date']
             if( new_slug == '' ):
-              new_slug = slug
+              new_slug = slug + '.html'
 
-            self.redirect('http://blog.gregtracy.com/%s/%s.html' % (post_date,new_slug))
+            self.redirect('http://blog.gregtracy.com%s/%s' % (post_date,new_slug))
         else:
             logging.debug('missed lookup for %s' % slug)
             create_or_update(slug)
