@@ -1,7 +1,8 @@
 application: greg-tracy
-version: 1
-runtime: python
+version: migrate-python27
+runtime: python27
 api_version: 1
+threadsafe: true
 
 derived_file_type:
 - python_precompiled
@@ -17,4 +18,4 @@ handlers:
   upload: apple-touch-icon.png
 
 - url: .*
-  script: main.py
+  script: main.app
